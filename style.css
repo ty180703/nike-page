@@ -1,0 +1,133 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.left-container {
+  flex: 0.5;
+  background-color: aqua;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  /*max-height: 10%;*/
+  box-sizing: border-box;
+}
+
+.img-holder {
+  height: 15%;
+}
+
+.img1 {
+  width: 100%;
+  max-height: 20%;
+}
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.range-slider {
+  width: 100%;
+  position: relative;
+  margin: 15px 0 0px 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #36b37e;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  border: none;
+}
+.right-container {
+  flex: 2;
+  background-color: blueviolet;
+}
+
+nav {
+}
+
+.main-nav {
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+}
+
+form {
+  border: #fff 5px solid;
+}
+
+.left-side-2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightcyan;
+  height: 10%;
+  width: 80%;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.subtitle {
+}
+
+.subtitle-btn {
+}

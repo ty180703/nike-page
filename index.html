@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nike webpage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <div class="img-holder">
+          <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            class="img1"
+            src="https://static.stereogum.com/uploads/2016/11/Mura-Masa-Lovesick-video-1478186647.jpg"
+            alt=""
+          />
+        </div>
+        <div class="left-left-side">
+          <h1>SNEAKER'S</h1>
+          <div class="list-items">
+            <ul>
+              <li>Lifestyle</li>
+              <li>Basketball</li>
+              <li>Football</li>
+              <li>Training</li>
+            </ul>
+          </div>
+          <h1>Filter</h1>
+          <div class="card">
+            <div class="price-content">
+              <div>
+                <label>Min</label>
+                <p id="min-value">$50</p>
+              </div>
+
+              <div>
+                <label>Max</label>
+                <p id="max-value">$500</p>
+              </div>
+            </div>
+
+            <div class="range-slider">
+              <input
+                type="range"
+                class="min-price"
+                value="100"
+                min="10"
+                max="500"
+                step="10"
+              />
+              <input
+                type="range"
+                class="max-price"
+                value="250"
+                min="10"
+                max="500"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <header>
+          <nav class="main-nav">
+            <ul class="nav-links">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Favorites</a></li>
+            </ul>
+          </nav>
+          <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+          </form>
+          <div class="nav-btn">
+            <a class="btn1" href="#"> <button>1</button></a>
+            <a class="btn2" href="#"> <button>2</button></a>
+          </div>
+        </header>
+        <div class="left-side-2">
+          <h1 class="subtitle">LIFESTYLE SNEAKERS</h1>
+          <div class="subtitle-btn">
+            <a class="btn3" href="#"> <button>3</button></a>
+            <a class="btn4" href="#"> <button>4</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
