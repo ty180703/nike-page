@@ -28,7 +28,7 @@ validateRange(inputElements[0].value, inputElements[1].value);
 
 $(document).ready(function () {
   $.getJSON("./data.json", function (data) {
-    console.log("helo");
+    console.log(data);
   }).fail(function () {
     console.log("check ya code");
   });
