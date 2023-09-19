@@ -3,6 +3,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+:root {
+  --height-value: 11.5%;
+  --new-height-value: 400px;
 }
 .container {
   display: flex;
@@ -12,46 +18,134 @@ body {
 
 .left-container {
   flex: 0.5;
-  background-color: aqua;
+  background-color: #fff;
+  border-right: solid 2px #e8e4e3;
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
-  /*max-height: 10%;*/
+  width: 40%;
+  height: 40%;
+  margin: 10px;
+  margin-left: 20px;
   box-sizing: border-box;
 }
 
 .img-holder {
-  height: 15%;
+  height: var(--height-value);
+  display: flex;
+  align-items: center;
+}
+
+.img2 {
+  height: calc(6% + 82.5px);
+  border-bottom: solid 2px #e8e4e3;
 }
 
 .img1 {
   width: 100%;
-  max-height: 20%;
+  height: 100%;
 }
 
 .card {
-  width: 100%;
   background-color: #fff;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 15% 0 15% 0;
+  width: 100%;
 }
 
 .price-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 30px;
+  width: 60%;
+}
+
+.card-data {
+  /* padding-right: 10px; */
+  display: inherit;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card-data2 {
+  /* padding-left: 10px; */
+  display: inherit;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .range-slider {
-  width: 100%;
+  width: 60%;
   position: relative;
   margin: 15px 0 0px 0;
 }
 
+.color-h1 {
+  margin-bottom: 20px !important;
+}
+
+.color-filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.color-filter button {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  margin-left: 0;
+  margin-right: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn-1 {
+  background-color: #f4f0f0;
+}
+.btn-2 {
+  background-color: #000000;
+}
+.btn-3 {
+  background-color: #964b00;
+}
+.btn-4 {
+  background-color: #fffdd0;
+}
+.btn-5 {
+  background-color: #808080;
+}
+.btn-6 {
+  background-color: #feb44a;
+}
+.btn-7 {
+  background-color: #33aaff;
+}
+.btn-8 {
+  background-color: #f66bdb;
+}
+.btn-9 {
+  background-color: #cc6bf6;
+}
+.btn-10 {
+  background-color: #f13035;
+}
+.btn-11 {
+  background-color: #d2b48c;
+}
+.btn-12 {
+  background-color: #fbf696;
+}
+.btn-13 {
+  background: linear-gradient(to right, red, yellow, green, blue);
+}
+
 input[type="range"] {
-  -webkit-appearance: none;
   width: 100%;
   background: transparent;
   position: absolute;
@@ -81,7 +175,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 .right-container {
   flex: 2;
-  background-color: blueviolet;
+  background-color: fff;
 }
 
 nav {
@@ -93,41 +187,201 @@ nav {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  background-color: #ffffff;
   align-items: center;
+
+  height: var(--height-value);
 }
 
 .nav-links {
   list-style: none;
+  padding-left: 75px;
+  padding-right: 40px;
+  color: black;
 }
 
 .nav-links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-form {
-  border: #fff 5px solid;
+.search-form {
+  width: 100%;
+  max-width: 230px;
+  background: #e8e4e3;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 30px;
+  justify-content: center;
+}
+
+.search-form input {
+  background: transparent;
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 2px 1px;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.search-icon {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+}
+
+#search-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .left-side-2 {
   display: flex;
   justify-content: space-between;
-  background-color: lightcyan;
-  height: 10%;
+  background-color: #fff;
+  height: 6%;
   width: 80%;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 10%;
   padding-right: 10%;
+  border-bottom: solid 2px #e8e4e3;
+  border-top: solid 2px #e8e4e3;
+  font-size: 20%;
 }
 
 .subtitle {
+  font-size: 3.5rem;
 }
 
 .subtitle-btn {
+}
+
+.product-container {
+  max-height: 70%;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-container img {
+  max-width: 250px;
+  min-width: 250px;
+  height: auto;
+  transform: scaleX(-1) rotate(30deg);
+  /* filter: drop-shadow(14px 31px 19px #000000); */
+  filter: drop-shadow(14px 31px 26px #000000);
+}
+
+.my-image {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.custom-div {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 400px;
+  max-width: 400px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.custom-div2 {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  font-weight: bold;
+
+  width: 100%;
+}
+
+.custom-div3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--new-height-value);
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+.custom-div2 p {
+  padding: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: initial;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.left-left-side {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 25%;
+
+  overflow-y: scroll;
+}
+
+.left-left-side h1 {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.left-left-side ul {
+  list-style: none;
+  font-weight: bold;
+  padding-left: 0;
+}
+
+.list-items {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-items li {
+  color: black;
+  transition: color 0.3s ease; /* Add a color transition effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+  padding: 3px;
+}
+
+/* Apply color change on hover */
+.list-items li:hover {
+  color: blue; /* Change to your desired hover color */
 }
